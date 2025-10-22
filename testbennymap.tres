@@ -1,0 +1,9 @@
+[gd_resource type="CanvasTexture" load_steps=3 format=3 uid="uid://cjv6y33ncqaoy"]
+
+[ext_resource type="Texture2D" uid="uid://dol0yr6svj5s0" path="res://BENNY_IDLE_GAME_TEST_RIGHT.png" id="1_h23i4"]
+[ext_resource type="Texture2D" uid="uid://cvpwtqtk3fk6u" path="res://BENNY_IDLE_RIGHT_NORMALMAP.png" id="2_jbsji"]
+
+[resource]
+diffuse_texture = ExtResource("1_h23i4")
+normal_texture = ExtResource("2_jbsji")
+specular_shininess = 0.25
