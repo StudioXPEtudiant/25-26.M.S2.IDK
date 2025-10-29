@@ -302,10 +302,76 @@ animations = [{
 "speed": 12.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("10_ao5ci")
 }, {
-"duration": 1.0,
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_ao5ci")
+}, {
+"duration": 2.0,
 "texture": ExtResource("10_ao5ci")
 }],
 "loop": false,
@@ -3054,7 +3120,7 @@ texture_filter = 1
 position = Vector2(0, -3.7)
 scale = Vector2(1, 1.01515)
 sprite_frames = SubResource("SpriteFrames_i1e8k")
-animation = &"Idle_Right"
+animation = &"Idle_Middle"
 autoplay = "Idle_Right"
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
