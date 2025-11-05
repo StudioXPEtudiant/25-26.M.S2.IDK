@@ -5,6 +5,7 @@ var jumpTime:float=5
 var jumpWaitTime:float=5
 var dashTime:float=0.4
 var dashWaitTime:float=5
+var midleTime:float=5
 @export var Defealt_Jump_Time:float = 1
 @export var Defealt_Dash_Time:float =1
 var IsJumping:bool
@@ -70,7 +71,10 @@ func _process(_delta: float) -> void:
 
 	if Input.is_action_pressed("Shift"):
 		if is_crouching == false:
-			deplacement.x+= 50.5
+			if CurrentDir == (Direction.Left):
+				deplacement.x-= 50
+			if CurrentDir == (Direction.Right):
+				deplacement.x+= 50
 
 	CollisionStanding.disabled = is_crouching
 	CollisionCrouch.disabled = not is_crouching
@@ -140,14 +144,14 @@ func _process(_delta: float) -> void:
 			if LastDir == Direction.Right:
 				ChangeDir(Direction.Middle)
 				animatedSprite.play("Idle_Middle")
-			elif LastDir == Direction.Left:
+			elif LastDir == Direction.Left && animatedSprite.animation_finished:
 				animatedSprite.play("WalkLeft")
 				
 		if CurrentDir == Direction.Right:
 			if LastDir == Direction.Left:
 				ChangeDir(Direction.Middle)
 				animatedSprite.play("Idle_Middle")
-			elif LastDir == Direction.Right:
+			elif LastDir == Direction.Right && animatedSprite.animation_finished:
 				animatedSprite.play("WalkRight")
 	
 		if animatedSprite.animation_finished:

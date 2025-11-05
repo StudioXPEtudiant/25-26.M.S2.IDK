@@ -675,22 +675,49 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1uhwq")
+"texture": SubResource("AtlasTexture_q4fs6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_e32bc")
+"texture": SubResource("AtlasTexture_nebx4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dmwpk")
+"texture": SubResource("AtlasTexture_jg0rt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uelyw")
+"texture": SubResource("AtlasTexture_e034s")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ieuby")
+"texture": SubResource("AtlasTexture_tgulp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rrqiw")
+"texture": SubResource("AtlasTexture_de1fq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iaugx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cuwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rae53")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q13dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5c0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fyecd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pncs8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rcom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y73kf")
 }],
 "loop": true,
 "name": &"WalkLeft",
@@ -3120,7 +3147,7 @@ texture_filter = 1
 position = Vector2(0, -3.7)
 scale = Vector2(1, 1.01515)
 sprite_frames = SubResource("SpriteFrames_i1e8k")
-animation = &"Idle_Middle"
+animation = &"WalkLeft"
 autoplay = "Idle_Right"
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
