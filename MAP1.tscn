@@ -1,0 +1,112 @@
+[gd_scene load_steps=7 format=3 uid="uid://clb04fggjt4xh"]
+
+[ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://Benny.tscn" id="1_qgkui"]
+[ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://platform.tscn" id="2_3ag7b"]
+[ext_resource type="Script" path="res://Parallax.gd" id="3_n4i1j"]
+[ext_resource type="Texture2D" uid="uid://b2l6rcuwoicpb" path="res://grasslvl1.png" id="4_rk5y0"]
+[ext_resource type="Texture2D" uid="uid://d4ed3ri53v1vr" path="res://buildingcloselvl1.png" id="5_noxhc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74pnm"]
+size = Vector2(20, 423)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, -55)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_qgkui")]
+z_index = 9
+position = Vector2(288, 295)
+
+[node name="Layer1" type="Node2D" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("3_n4i1j")
+target = NodePath("../CharacterBody2D")
+
+[node name="Area2D" type="Area2D" parent="Layer1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Area2D2" type="Area2D" parent="Layer1"]
+position = Vector2(587, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D2"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Platform" parent="Layer1" instance=ExtResource("2_3ag7b")]
+position = Vector2(-415, 334)
+scale = Vector2(31.28, 1)
+
+[node name="Layer3" type="Node2D" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("3_n4i1j")
+target = NodePath("../CharacterBody2D")
+
+[node name="Grasslvl1" type="Sprite2D" parent="Layer3"]
+z_index = 10
+texture_filter = 1
+position = Vector2(0, 2)
+texture = ExtResource("4_rk5y0")
+
+[node name="Grasslvl2" type="Sprite2D" parent="Layer3"]
+z_index = 10
+texture_filter = 1
+position = Vector2(600, 2)
+texture = ExtResource("4_rk5y0")
+
+[node name="Grasslvl3" type="Sprite2D" parent="Layer3"]
+z_index = 10
+texture_filter = 1
+position = Vector2(-600, 2)
+texture = ExtResource("4_rk5y0")
+
+[node name="Area2D" type="Area2D" parent="Layer3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Area2D2" type="Area2D" parent="Layer3"]
+position = Vector2(587, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D2"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Layer2" type="Node2D" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("3_n4i1j")
+target = NodePath("../CharacterBody2D")
+
+[node name="Area2D" type="Area2D" parent="Layer2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Area2D2" type="Area2D" parent="Layer2"]
+position = Vector2(587, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D2"]
+position = Vector2(0, 201.5)
+shape = SubResource("RectangleShape2D_74pnm")
+
+[node name="Buildingcloselvl1" type="Sprite2D" parent="Layer2"]
+texture_filter = 1
+position = Vector2(0, 180)
+texture = ExtResource("5_noxhc")
+
+[node name="Buildingcloselvl2" type="Sprite2D" parent="Layer2"]
+texture_filter = 1
+position = Vector2(600, 180)
+texture = ExtResource("5_noxhc")
+
+[node name="Buildingcloselvl3" type="Sprite2D" parent="Layer2"]
+texture_filter = 1
+position = Vector2(-600, 180)
+texture = ExtResource("5_noxhc")
+
+[connection signal="body_entered" from="Layer1/Area2D" to="Layer1" method="xMinus"]
+[connection signal="body_entered" from="Layer1/Area2D2" to="Layer1" method="xPlus"]
+[connection signal="body_entered" from="Layer3/Area2D" to="Layer3" method="xMinus"]
+[connection signal="body_entered" from="Layer3/Area2D2" to="Layer3" method="xPlus"]
+[connection signal="body_entered" from="Layer2/Area2D" to="Layer2" method="xMinus"]
+[connection signal="body_entered" from="Layer2/Area2D2" to="Layer2" method="xPlus"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="IDK"
-run/main_scene="res://idk.tscn"
+run/main_scene="res://MAP1.tscn"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/image="res://Lil_Dude.png"
@@ -19,8 +19,8 @@ config/icon="res://Lil_Dude.png"
 
 [display]
 
-window/size/viewport_width=576
-window/size/viewport_height=324
+window/size/viewport_width=480
+window/size/viewport_height=270
 window/size/mode=2
 window/stretch/mode="viewport"
 
