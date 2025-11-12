@@ -22,14 +22,18 @@ script = ExtResource("3_n4i1j")
 target = NodePath("../CharacterBody2D")
 
 [node name="Area2D" type="Area2D" parent="Layer1"]
-position = Vector2(-271, 1)
+position = Vector2(-600, 1)
+collision_layer = 0
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D"]
 position = Vector2(0, 201.5)
 shape = SubResource("RectangleShape2D_74pnm")
 
 [node name="Area2D2" type="Area2D" parent="Layer1"]
-position = Vector2(316, 1)
+position = Vector2(600, 1)
+collision_layer = 0
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D2"]
 position = Vector2(0, 201.5)
@@ -42,6 +46,7 @@ scale = Vector2(31.28, 1)
 [node name="Layer3" type="Node2D" parent="." node_paths=PackedStringArray("target")]
 position = Vector2(224, 1)
 script = ExtResource("3_n4i1j")
+speed = -1.01
 target = NodePath("../CharacterBody2D")
 
 [node name="Grasslvl1" type="Sprite2D" parent="Layer3"]
@@ -63,14 +68,16 @@ position = Vector2(-600, 2)
 texture = ExtResource("4_rk5y0")
 
 [node name="Area2D" type="Area2D" parent="Layer3"]
-position = Vector2(-271, 1)
+position = Vector2(-600, 1)
+collision_layer = 0
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D"]
 position = Vector2(0, 201.5)
 shape = SubResource("RectangleShape2D_74pnm")
 
 [node name="Area2D2" type="Area2D" parent="Layer3"]
-position = Vector2(316, 1)
+position = Vector2(600, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D2"]
 position = Vector2(0, 201.5)
@@ -79,17 +86,22 @@ shape = SubResource("RectangleShape2D_74pnm")
 [node name="Layer2" type="Node2D" parent="." node_paths=PackedStringArray("target")]
 position = Vector2(224, 1)
 script = ExtResource("3_n4i1j")
+speed = -1.2
 target = NodePath("../CharacterBody2D")
 
 [node name="Area2D" type="Area2D" parent="Layer2"]
-position = Vector2(-271, 1)
+position = Vector2(-600, 1)
+collision_layer = 0
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D"]
 position = Vector2(0, 201.5)
 shape = SubResource("RectangleShape2D_74pnm")
 
 [node name="Area2D2" type="Area2D" parent="Layer2"]
-position = Vector2(316, 1)
+position = Vector2(600, 1)
+collision_layer = 0
+collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D2"]
 position = Vector2(0, 201.5)
