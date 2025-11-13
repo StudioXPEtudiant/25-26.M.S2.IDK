@@ -1,130 +1,49 @@
-[gd_scene load_steps=7 format=3 uid="uid://clb04fggjt4xh"]
+[gd_scene load_steps=5 format=3 uid="uid://clb04fggjt4xh"]
 
 [ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://Benny.tscn" id="1_qgkui"]
 [ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://platform.tscn" id="2_3ag7b"]
-[ext_resource type="Script" path="res://Parallax.gd" id="3_n4i1j"]
 [ext_resource type="Texture2D" uid="uid://b2l6rcuwoicpb" path="res://grasslvl1.png" id="4_rk5y0"]
 [ext_resource type="Texture2D" uid="uid://d4ed3ri53v1vr" path="res://buildingcloselvl1.png" id="5_noxhc"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_74pnm"]
-size = Vector2(20, 423)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, -55)
 
+[node name="grass" type="ParallaxBackground" parent="."]
+layer = 10
+offset = Vector2(0, -50)
+transform = Transform2D(1, 0, 0, 1, 0, -50)
+scroll_base_scale = Vector2(1.3, 1)
+
+[node name="Sky" type="ParallaxLayer" parent="grass"]
+texture_filter = 1
+position = Vector2(300, -2)
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="grass/Sky"]
+texture_filter = 1
+texture = ExtResource("4_rk5y0")
+
+[node name="building_closest" type="ParallaxBackground" parent="."]
+offset = Vector2(0, -15)
+transform = Transform2D(1, 0, 0, 1, 0, -15)
+scroll_base_scale = Vector2(1.25, 1)
+
+[node name="Building" type="ParallaxLayer" parent="building_closest"]
+z_index = -10
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="building_closest/Building"]
+light_mask = 0
+visibility_layer = 524288
+texture_filter = 1
+texture = ExtResource("5_noxhc")
+centered = false
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_qgkui")]
 z_index = 9
-position = Vector2(288, 295)
+position = Vector2(291, 314)
 
-[node name="Layer1" type="Node2D" parent="." node_paths=PackedStringArray("target")]
-position = Vector2(224, 1)
-script = ExtResource("3_n4i1j")
-target = NodePath("../CharacterBody2D")
-
-[node name="Area2D" type="Area2D" parent="Layer1"]
-position = Vector2(-600, 1)
-collision_layer = 0
-collision_mask = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Area2D2" type="Area2D" parent="Layer1"]
-position = Vector2(600, 1)
-collision_layer = 0
-collision_mask = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer1/Area2D2"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Platform" parent="Layer1" instance=ExtResource("2_3ag7b")]
-position = Vector2(-415, 334)
+[node name="Platform" parent="." instance=ExtResource("2_3ag7b")]
+position = Vector2(-191, 335)
 scale = Vector2(31.28, 1)
-
-[node name="Layer3" type="Node2D" parent="." node_paths=PackedStringArray("target")]
-position = Vector2(224, 1)
-script = ExtResource("3_n4i1j")
-speed = -1.01
-target = NodePath("../CharacterBody2D")
-
-[node name="Grasslvl1" type="Sprite2D" parent="Layer3"]
-z_index = 10
-texture_filter = 1
-position = Vector2(0, 2)
-texture = ExtResource("4_rk5y0")
-
-[node name="Grasslvl2" type="Sprite2D" parent="Layer3"]
-z_index = 10
-texture_filter = 1
-position = Vector2(600, 2)
-texture = ExtResource("4_rk5y0")
-
-[node name="Grasslvl3" type="Sprite2D" parent="Layer3"]
-z_index = 10
-texture_filter = 1
-position = Vector2(-600, 2)
-texture = ExtResource("4_rk5y0")
-
-[node name="Area2D" type="Area2D" parent="Layer3"]
-position = Vector2(-600, 1)
-collision_layer = 0
-collision_mask = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Area2D2" type="Area2D" parent="Layer3"]
-position = Vector2(600, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer3/Area2D2"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Layer2" type="Node2D" parent="." node_paths=PackedStringArray("target")]
-position = Vector2(224, 1)
-script = ExtResource("3_n4i1j")
-speed = -1.2
-target = NodePath("../CharacterBody2D")
-
-[node name="Area2D" type="Area2D" parent="Layer2"]
-position = Vector2(-600, 1)
-collision_layer = 0
-collision_mask = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Area2D2" type="Area2D" parent="Layer2"]
-position = Vector2(600, 1)
-collision_layer = 0
-collision_mask = 9
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Layer2/Area2D2"]
-position = Vector2(0, 201.5)
-shape = SubResource("RectangleShape2D_74pnm")
-
-[node name="Buildingcloselvl1" type="Sprite2D" parent="Layer2"]
-texture_filter = 1
-position = Vector2(0, 180)
-texture = ExtResource("5_noxhc")
-
-[node name="Buildingcloselvl2" type="Sprite2D" parent="Layer2"]
-texture_filter = 1
-position = Vector2(600, 180)
-texture = ExtResource("5_noxhc")
-
-[node name="Buildingcloselvl3" type="Sprite2D" parent="Layer2"]
-texture_filter = 1
-position = Vector2(-600, 180)
-texture = ExtResource("5_noxhc")
-
-[connection signal="body_entered" from="Layer1/Area2D" to="Layer1" method="xMinus"]
-[connection signal="body_entered" from="Layer1/Area2D2" to="Layer1" method="xPlus"]
-[connection signal="body_entered" from="Layer3/Area2D" to="Layer3" method="xMinus"]
-[connection signal="body_entered" from="Layer3/Area2D2" to="Layer3" method="xPlus"]
-[connection signal="body_entered" from="Layer2/Area2D" to="Layer2" method="xMinus"]
-[connection signal="body_entered" from="Layer2/Area2D2" to="Layer2" method="xPlus"]
