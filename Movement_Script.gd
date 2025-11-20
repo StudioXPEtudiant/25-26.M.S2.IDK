@@ -107,7 +107,7 @@ func _process(_delta: float) -> void:
 				IsJumping = true 
 				jumpTime = Defealt_Jump_Time /2
 		else:
-			deplacement.y += 100 *jumpTime+90.9
+			deplacement.y += 10000 *jumpTime+90.9
 			if !IsJumping:
 				IsJumping = true
 				jumpTime = Defealt_Jump_Time /4
