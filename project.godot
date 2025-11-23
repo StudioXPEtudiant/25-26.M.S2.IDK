@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="IDK"
-run/main_scene="res://MAP1.tscn"
+run/main_scene="res://Asset/Map1/MAP1.tscn"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.3", "GL Compatibility")
-boot_splash/image="res://Lil_Dude.png"
-config/icon="res://Lil_Dude.png"
+boot_splash/image="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude.png"
+config/icon="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude.png"
+
+[audio]
+
+buses/default_bus_layout="res://Asset/Map1Concept/whatonactualearthisthis/default_bus_layout.tres"
 
 [display]
 
