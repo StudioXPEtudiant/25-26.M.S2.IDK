@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvpwtqtk3fk6u"
-path="res://.godot/imported/BENNY_IDLE_RIGHT_NORMALMAP.png-36cfe2136e71343d596d0381f2ee2b9a.ctex"
+path="res://.godot/imported/BENNY_IDLE_RIGHT_NORMALMAP.png-0540c6102de3e1fefaf61888f0825e2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/BENNY_IDLE_RIGHT_NORMALMAP.png"
-dest_files=["res://.godot/imported/BENNY_IDLE_RIGHT_NORMALMAP.png-36cfe2136e71343d596d0381f2ee2b9a.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/BENNY_IDLE_RIGHT_NORMALMAP.png"
+dest_files=["res://.godot/imported/BENNY_IDLE_RIGHT_NORMALMAP.png-0540c6102de3e1fefaf61888f0825e2f.ctex"]
 
 [params]
 

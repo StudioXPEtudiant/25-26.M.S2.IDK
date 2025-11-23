@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2lqpyfhsvl50"
-path="res://.godot/imported/Lil_Dude_Jump_Basic.png-eee61f9f6fa9899165ab6fcf7cf4cdef.ctex"
+path="res://.godot/imported/Lil_Dude_Jump_Basic.png-98afd65959955ceb3bf93a247bc35be9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Jump_Basic.png"
-dest_files=["res://.godot/imported/Lil_Dude_Jump_Basic.png-eee61f9f6fa9899165ab6fcf7cf4cdef.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Jump_Basic.png"
+dest_files=["res://.godot/imported/Lil_Dude_Jump_Basic.png-98afd65959955ceb3bf93a247bc35be9.ctex"]
 
 [params]
 

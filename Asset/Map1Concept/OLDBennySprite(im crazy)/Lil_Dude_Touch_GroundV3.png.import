@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhwanbdfq4kh0"
-path="res://.godot/imported/Lil_Dude_Touch_GroundV3.png-84aeed4e60a04bae8fbaf5ed0941a919.ctex"
+path="res://.godot/imported/Lil_Dude_Touch_GroundV3.png-33edf92296eae33dc1224293587412f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Touch_GroundV3.png"
-dest_files=["res://.godot/imported/Lil_Dude_Touch_GroundV3.png-84aeed4e60a04bae8fbaf5ed0941a919.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Touch_GroundV3.png"
+dest_files=["res://.godot/imported/Lil_Dude_Touch_GroundV3.png-33edf92296eae33dc1224293587412f5.ctex"]
 
 [params]
 

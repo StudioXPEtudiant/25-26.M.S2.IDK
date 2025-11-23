@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0h0o6bprtl55"
-path="res://.godot/imported/just a lil test.png-572da82767d7bbbf8c2c1b6a270542a4.ctex"
+path="res://.godot/imported/just a lil test.png-b242e33ef000b8da061644ba91c8713f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/just a lil test.png"
-dest_files=["res://.godot/imported/just a lil test.png-572da82767d7bbbf8c2c1b6a270542a4.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/just a lil test.png"
+dest_files=["res://.godot/imported/just a lil test.png-b242e33ef000b8da061644ba91c8713f.ctex"]
 
 [params]
 

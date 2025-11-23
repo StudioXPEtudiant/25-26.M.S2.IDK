@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfpkmvcadm37x"
-path="res://.godot/imported/stars.png-b4b66eeb01a52709557fbe6b3abb2f53.ctex"
+uid="uid://bnligkg0t3upn"
+path="res://.godot/imported/Fence.png-b8cdcbbd14da402b46cb0bdcbecdc549.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/stars.png"
-dest_files=["res://.godot/imported/stars.png-b4b66eeb01a52709557fbe6b3abb2f53.ctex"]
+source_file="res://asset/map1Concept/imagesMap/Fence.png"
+dest_files=["res://.godot/imported/Fence.png-b8cdcbbd14da402b46cb0bdcbecdc549.ctex"]
 
 [params]
 

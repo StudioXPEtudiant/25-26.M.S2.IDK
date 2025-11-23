@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1fs50ea6w6uv"
-path="res://.godot/imported/Lil_Dude_Icon1.png-b8126ddec613af506e1d2c85ac7743cf.ctex"
+uid="uid://c4w4dlu4cmfli"
+path="res://.godot/imported/sky unbugged.png-13d3875e2298642251f6d7092caa227a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/Lil_Dude_Icon1.png"
-dest_files=["res://.godot/imported/Lil_Dude_Icon1.png-b8126ddec613af506e1d2c85ac7743cf.ctex"]
+source_file="res://asset/map1Concept/imagesMap/sky unbugged.png"
+dest_files=["res://.godot/imported/sky unbugged.png-13d3875e2298642251f6d7092caa227a.ctex"]
 
 [params]
 

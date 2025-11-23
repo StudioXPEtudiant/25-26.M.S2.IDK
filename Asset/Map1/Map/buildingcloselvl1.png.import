@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4ed3ri53v1vr"
-path="res://.godot/imported/buildingcloselvl1.png-405c5fbfa7596703a375dded54414077.ctex"
+path="res://.godot/imported/buildingcloselvl1.png-9a146d3cc833b7b8e48c585d2997a368.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1/Map/buildingcloselvl1.png"
-dest_files=["res://.godot/imported/buildingcloselvl1.png-405c5fbfa7596703a375dded54414077.ctex"]
+source_file="res://asset/map1/map/buildingcloselvl1.png"
+dest_files=["res://.godot/imported/buildingcloselvl1.png-9a146d3cc833b7b8e48c585d2997a368.ctex"]
 
 [params]
 

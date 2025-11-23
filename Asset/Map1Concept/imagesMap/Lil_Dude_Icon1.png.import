@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwgxiycefn1n4"
-path="res://.godot/imported/Untitled.png-4c2a25343000810d9d451d7b809008ae.ctex"
+uid="uid://b1fs50ea6w6uv"
+path="res://.godot/imported/Lil_Dude_Icon1.png-63a48514f276201c45aac610ae231f00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/Untitled.png"
-dest_files=["res://.godot/imported/Untitled.png-4c2a25343000810d9d451d7b809008ae.ctex"]
+source_file="res://asset/map1Concept/imagesMap/Lil_Dude_Icon1.png"
+dest_files=["res://.godot/imported/Lil_Dude_Icon1.png-63a48514f276201c45aac610ae231f00.ctex"]
 
 [params]
 

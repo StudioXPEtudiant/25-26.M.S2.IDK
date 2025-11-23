@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://5mgb8blgt4t2"]
 
-[ext_resource type="Texture2D" uid="uid://do844gx7dh122" path="res://Asset/Map1Concept/Images(Map)/black.png" id="1_10qbt"]
+[ext_resource type="Texture2D" uid="uid://do844gx7dh122" path="res://asset/map1Concept/imagesMap/black.png" id="1_10qbt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2idwo"]
 size = Vector2(53.4734, 13)

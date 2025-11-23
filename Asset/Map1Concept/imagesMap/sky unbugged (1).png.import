@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbm8ul2yqmp30"
-path="res://.godot/imported/caca.png-b88ed56cf6a08537ea86ce9eed02993d.ctex"
+uid="uid://dnef14xupunix"
+path="res://.godot/imported/sky unbugged (1).png-3568106b48d7ca775441e45e24e2eaf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/caca.png"
-dest_files=["res://.godot/imported/caca.png-b88ed56cf6a08537ea86ce9eed02993d.ctex"]
+source_file="res://asset/map1Concept/imagesMap/sky unbugged (1).png"
+dest_files=["res://.godot/imported/sky unbugged (1).png-3568106b48d7ca775441e45e24e2eaf2.ctex"]
 
 [params]
 

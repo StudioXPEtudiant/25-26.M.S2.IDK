@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b33chauce15to"
-path="res://.godot/imported/BENNY_LOOKIN_PLACES.png-eee8ad83caa9880cd1382ecefadabb82.ctex"
+path="res://.godot/imported/BENNY_LOOKIN_PLACES.png-5540bbd9213efb64b158b10b9f9fc222.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/BENNY_LOOKIN_PLACES.png"
-dest_files=["res://.godot/imported/BENNY_LOOKIN_PLACES.png-eee8ad83caa9880cd1382ecefadabb82.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/BENNY_LOOKIN_PLACES.png"
+dest_files=["res://.godot/imported/BENNY_LOOKIN_PLACES.png-5540bbd9213efb64b158b10b9f9fc222.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2u3aa16qdry3"
-path="res://.godot/imported/Lil_Dude_Walk_HOLIDAY.png-c1f5917609362e2229e628c44c65d7d5.ctex"
+path="res://.godot/imported/Lil_Dude_Walk_HOLIDAY.png-4e41e077e622ff423b6b74f522f02e68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Walk_HOLIDAY.png"
-dest_files=["res://.godot/imported/Lil_Dude_Walk_HOLIDAY.png-c1f5917609362e2229e628c44c65d7d5.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/Lil_Dude_Walk_HOLIDAY.png"
+dest_files=["res://.godot/imported/Lil_Dude_Walk_HOLIDAY.png-4e41e077e622ff423b6b74f522f02e68.ctex"]
 
 [params]
 

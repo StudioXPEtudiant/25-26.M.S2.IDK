@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c54rgvyo33dss"]
 
-[ext_resource type="Texture2D" uid="uid://dnef14xupunix" path="res://Asset/Map1Concept/Images(Map)/sky unbugged (1).png" id="1_w3mwb"]
-[ext_resource type="Texture2D" uid="uid://d4ed3ri53v1vr" path="res://Asset/Map1/Map/buildingcloselvl1.png" id="2_dkcsw"]
-[ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://Asset/Map1/Objects/Benny.tscn" id="3_tlcv6"]
-[ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://Asset/Map1/Objects/platform.tscn" id="4_v48y7"]
+[ext_resource type="Texture2D" uid="uid://dnef14xupunix" path="res://asset/map1Concept/imagesMap/sky unbugged (1).png" id="1_t66uo"]
+[ext_resource type="Texture2D" uid="uid://d4ed3ri53v1vr" path="res://asset/map1/map/buildingcloselvl1.png" id="2_q233u"]
+[ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://asset/map1/object/Benny.tscn" id="3_p050q"]
+[ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://asset/map1/object/platform.tscn" id="4_yubw7"]
 
 [node name="Map2" type="Node2D"]
 
@@ -16,7 +16,7 @@ motion_mirroring = Vector2(600, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_w3mwb")
+texture = ExtResource("1_t66uo")
 centered = false
 
 [node name="Building" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -24,11 +24,11 @@ motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(600, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Building"]
-texture = ExtResource("2_dkcsw")
+texture = ExtResource("2_q233u")
 centered = false
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_tlcv6")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_p050q")]
 position = Vector2(105, 242)
 
-[node name="Platform" parent="." instance=ExtResource("4_v48y7")]
+[node name="Platform" parent="." instance=ExtResource("4_yubw7")]
 position = Vector2(302, 286)

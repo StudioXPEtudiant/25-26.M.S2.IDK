@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0uwatsn3mdtv"
-path="res://.godot/imported/REALUNUSED.png-9b9757ee2a9e586689712a4acca9ee24.ctex"
+path="res://.godot/imported/REALUNUSED.png-a5b6c2cb7e4f236ce7eaf5a39694915a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/REALUNUSED.png"
-dest_files=["res://.godot/imported/REALUNUSED.png-9b9757ee2a9e586689712a4acca9ee24.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/REALUNUSED.png"
+dest_files=["res://.godot/imported/REALUNUSED.png-a5b6c2cb7e4f236ce7eaf5a39694915a.ctex"]
 
 [params]
 

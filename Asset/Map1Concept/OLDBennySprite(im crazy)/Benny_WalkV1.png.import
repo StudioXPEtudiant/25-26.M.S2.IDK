@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsxwu2188ll23"
-path="res://.godot/imported/Benny_WalkV1.png-2181ecbaa3b547c0c818eb978cc592ab.ctex"
+path="res://.godot/imported/Benny_WalkV1.png-6eea2f35209093f211557f5f85642c92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Benny_WalkV1.png"
-dest_files=["res://.godot/imported/Benny_WalkV1.png-2181ecbaa3b547c0c818eb978cc592ab.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/Benny_WalkV1.png"
+dest_files=["res://.godot/imported/Benny_WalkV1.png-6eea2f35209093f211557f5f85642c92.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6olai488k6dl"
-path="res://.godot/imported/sky.png-4637c5e4a4f90a41f17f42679790698f.ctex"
+uid="uid://beo8v4qe62uwg"
+path="res://.godot/imported/Building2.png-b2be5a28ec95c0742695cc0fe6493cb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/sky.png"
-dest_files=["res://.godot/imported/sky.png-4637c5e4a4f90a41f17f42679790698f.ctex"]
+source_file="res://asset/map1Concept/imagesMap/Building2.png"
+dest_files=["res://.godot/imported/Building2.png-b2be5a28ec95c0742695cc0fe6493cb5.ctex"]
 
 [params]
 

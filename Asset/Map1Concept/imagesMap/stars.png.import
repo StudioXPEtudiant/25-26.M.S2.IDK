@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beo8v4qe62uwg"
-path="res://.godot/imported/Building2.png-ef68f675b34caae243fb34b836d8c86d.ctex"
+uid="uid://cfpkmvcadm37x"
+path="res://.godot/imported/stars.png-5264150c2daeb27d66145a25ccdecc32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/Images(Map)/Building2.png"
-dest_files=["res://.godot/imported/Building2.png-ef68f675b34caae243fb34b836d8c86d.ctex"]
+source_file="res://asset/map1Concept/imagesMap/stars.png"
+dest_files=["res://.godot/imported/stars.png-5264150c2daeb27d66145a25ccdecc32.ctex"]
 
 [params]
 

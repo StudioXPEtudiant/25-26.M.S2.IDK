@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdcomq4md5pid"
-path="res://.godot/imported/Lil_Dude_FallingV4.png-bd6c0badcf5636378d798c9df81a2267.ctex"
+path="res://.godot/imported/Lil_Dude_FallingV4.png-8eee54fde34bd40492e7f00fc3cc0bb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Map1Concept/OLDBennySprite(im crazy)/Lil_Dude_FallingV4.png"
-dest_files=["res://.godot/imported/Lil_Dude_FallingV4.png-bd6c0badcf5636378d798c9df81a2267.ctex"]
+source_file="res://asset/map1Concept/OLDBennySprite(im crazy)/Lil_Dude_FallingV4.png"
+dest_files=["res://.godot/imported/Lil_Dude_FallingV4.png-8eee54fde34bd40492e7f00fc3cc0bb7.ctex"]
 
 [params]
 
