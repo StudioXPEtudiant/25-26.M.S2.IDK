@@ -71,10 +71,11 @@ func _process(_delta: float) -> void:
 
 	if Input.is_action_pressed("Shift"):
 		if is_crouching == false:
-			if CurrentDir == (Direction.Left):
-				deplacement.x-= 50
-			if CurrentDir == (Direction.Right):
-				deplacement.x+= 50
+			if CurrentState != (MoveState.Idle):
+				if CurrentDir == (Direction.Left):
+					deplacement.x-= 50
+				if CurrentDir == (Direction.Right):
+					deplacement.x+= 50
 
 	CollisionStanding.disabled = is_crouching
 	CollisionCrouch.disabled = not is_crouching
@@ -107,7 +108,7 @@ func _process(_delta: float) -> void:
 				IsJumping = true 
 				jumpTime = Defealt_Jump_Time /2
 		else:
-			deplacement.y += 10000 *jumpTime+90.9
+			deplacement.y += 100 *jumpTime+90.9
 			if !IsJumping:
 				IsJumping = true
 				jumpTime = Defealt_Jump_Time /4
