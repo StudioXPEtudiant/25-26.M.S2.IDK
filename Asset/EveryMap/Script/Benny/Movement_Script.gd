@@ -15,6 +15,7 @@ var IsWalking
 @export var CollisionStanding: CollisionPolygon2D
 @export var CollisionCrouch: CollisionPolygon2D
 @export var CollisionDetectorHead: bool
+@export var Timer_grass: Timer
 
 enum MoveState {IsWalking,IsJumping,Idle,IsRunning,IsDashing}
 var CurrentState
@@ -36,8 +37,6 @@ func ChangeDir(NewDir):
 func _process(_delta: float) -> void:
 	var deplacement: Vector2
 	var is_crouching: bool = false
-	print("State : " + str(CurrentState))
-	print("Dir : " + str(CurrentDir))
 	if velocity.x == 0:
 		ChangeState(MoveState.Idle)
 	
@@ -49,6 +48,10 @@ func _process(_delta: float) -> void:
 	if CollisionDetectorHead:
 		is_crouching = true
 	
+	#if Input.is_action_just_pressed("Droite"):
+		#Timer_grass.start()
+	#if Input.is_action_just_released("Droite"):
+		#Timer_grass.stop()
 	
 	if Input.is_action_pressed("Droite"):
 		
@@ -140,7 +143,6 @@ func _process(_delta: float) -> void:
 
 	
 	if CurrentState == MoveState.IsWalking:
-		
 		if CurrentDir == Direction.Left:
 			if LastDir == Direction.Right:
 				ChangeDir(Direction.Middle)
@@ -162,3 +164,5 @@ func _process(_delta: float) -> void:
 					ChangeDir(Direction.Left)
 				if LastDir == Direction.Right:
 					ChangeDir(Direction.Right)
+					
+		

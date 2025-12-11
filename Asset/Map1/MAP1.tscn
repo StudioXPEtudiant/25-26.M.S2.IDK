@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://clb04fggjt4xh"]
+[gd_scene load_steps=12 format=3 uid="uid://clb04fggjt4xh"]
 
 [ext_resource type="Texture2D" uid="uid://cqmdlq6026mhc" path="res://asset/map1/map/sign.png" id="1_d2ype"]
 [ext_resource type="Texture2D" uid="uid://b2l6rcuwoicpb" path="res://asset/map1/map/grasslvl1.png" id="2_v4rfk"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cfpkmvcadm37x" path="res://asset/map1Concept/imagesMap/stars.png" id="8_6r2tt"]
 [ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://asset/map1/object/Benny.tscn" id="9_hlsa6"]
 [ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://asset/map1/object/platform.tscn" id="10_nsurf"]
+[ext_resource type="AudioStream" uid="uid://cgbmrxvs0x6sj" path="res://asset/map1/sound/Spooky_Song.ogg" id="11_2ynjo"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, -55)
@@ -201,10 +202,26 @@ position = Vector2(0, 15)
 texture = ExtResource("8_6r2tt")
 centered = false
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("9_hlsa6")]
+[node name="CharacterBody2D" parent="." node_paths=PackedStringArray("Timer_grass") instance=ExtResource("9_hlsa6")]
 z_index = 9
 position = Vector2(291, 314)
+Timer_grass = NodePath("../Timer_grass")
 
 [node name="Platform" parent="." instance=ExtResource("10_nsurf")]
 position = Vector2(-191, 335)
 scale = Vector2(19973.2, 1.01153)
+
+[node name="Grass1" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(321, 295)
+stream = ExtResource("11_2ynjo")
+volume_db = 1.0
+
+[node name="Timer_grass" type="Timer" parent="."]
+wait_time = 0.3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_2ynjo")
+autoplay = true
+parameters/looping = true
+
+[connection signal="timeout" from="Timer_grass" to="Grass1" method="play"]
