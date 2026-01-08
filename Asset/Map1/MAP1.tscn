@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cfpkmvcadm37x" path="res://asset/map1Concept/imagesMap/stars.png" id="8_6r2tt"]
 [ext_resource type="PackedScene" uid="uid://b38utk70pabmt" path="res://asset/map1/object/Benny.tscn" id="9_hlsa6"]
 [ext_resource type="PackedScene" uid="uid://5mgb8blgt4t2" path="res://asset/map1/object/platform.tscn" id="10_nsurf"]
-[ext_resource type="AudioStream" uid="uid://cgbmrxvs0x6sj" path="res://asset/map1/sound/Spooky_Song.ogg" id="11_2ynjo"]
+[ext_resource type="AudioStream" uid="uid://c3cu3lpk4p51a" path="res://asset/map1/sound/Spooky normal.ogg" id="11_6bi4j"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, -55)
@@ -213,15 +213,13 @@ scale = Vector2(19973.2, 1.01153)
 
 [node name="Grass1" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(321, 295)
-stream = ExtResource("11_2ynjo")
+stream = ExtResource("11_6bi4j")
 volume_db = 1.0
 
 [node name="Timer_grass" type="Timer" parent="."]
 wait_time = 0.3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("11_2ynjo")
 autoplay = true
-parameters/looping = true
 
 [connection signal="timeout" from="Timer_grass" to="Grass1" method="play"]
