@@ -78,7 +78,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-328.421, -84.7665)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(2220, -20)
@@ -87,13 +86,13 @@ nodes/fragment/3/position = Vector2(960, 40)
 nodes/fragment/5/node = SubResource("VisualShaderNodeVectorOp_qssc3")
 nodes/fragment/5/position = Vector2(1280, -80)
 nodes/fragment/6/node = SubResource("VisualShaderNodeColorFunc_2cgcx")
-nodes/fragment/6/position = Vector2(1040, -40)
+nodes/fragment/6/position = Vector2(1000, -60)
 nodes/fragment/8/node = SubResource("VisualShaderNodeInput_m427i")
 nodes/fragment/8/position = Vector2(980, 440)
 nodes/fragment/9/node = SubResource("VisualShaderNodeVectorOp_1y1rd")
 nodes/fragment/9/position = Vector2(1300, 320)
 nodes/fragment/10/node = SubResource("VisualShaderNodeColorParameter_ph43s")
-nodes/fragment/10/position = Vector2(1020, 240)
+nodes/fragment/10/position = Vector2(980, 220)
 nodes/fragment/11/node = SubResource("VisualShaderNodeVectorOp_cg8p7")
 nodes/fragment/11/position = Vector2(1680, 100)
-nodes/fragment/connections = PackedInt32Array(3, 0, 5, 1, 6, 0, 5, 0, 8, 0, 9, 1, 10, 0, 9, 0, 9, 0, 11, 1, 5, 0, 11, 0, 11, 0, 0, 0)
+nodes/fragment/connections = PackedInt32Array(6, 0, 5, 0, 5, 0, 11, 0, 9, 0, 11, 1, 11, 0, 0, 0, 3, 0, 5, 1, 8, 0, 9, 1, 10, 0, 9, 0)
