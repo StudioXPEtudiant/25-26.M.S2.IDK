@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bu3ioiyssknd"
+path="res://.godot/imported/ik this meme is dead but it funny when me made it.ogg-4d15b8e7a9e30e89f4e122890326ec9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://asset/Menus/ik this meme is dead but it funny when me made it.ogg"
+dest_files=["res://.godot/imported/ik this meme is dead but it funny when me made it.ogg-4d15b8e7a9e30e89f4e122890326ec9e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

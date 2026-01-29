@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://hqs2mougvhcn"]
+
+[ext_resource type="Script" path="res://asset/Menus/Menu_Scene1.gd" id="1_5g48c"]
+[ext_resource type="Script" path="res://GOBACKMENU.gd" id="2_8hdsf"]
+[ext_resource type="Script" path="res://gotocomingsoon.gd" id="3_lva7m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5g48c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -8.602
+autoplay = true
+playback_type = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 484.0
+offset_bottom = 271.0
+scale = Vector2(1.04, 1)
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="level1" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Level 1"
+
+[node name="level2" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Coming Soon"
+
+[node name="level3" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "No"
+
+[node name="level4" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Nothing"
+
+[node name="level5" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Ok"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 383.0
+offset_top = 18.0
+offset_right = 465.0
+offset_bottom = 249.0
+theme_override_font_sizes/font_size = 13
+text = "BACK"
+
+[node name="Back" type="Node" parent="."]
+script = ExtResource("2_8hdsf")
+
+[node name="unfinished" type="Node" parent="."]
+script = ExtResource("3_lva7m")
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/level1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/level2" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/level3" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/level4" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/level5" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="Button2" to="Back" method="_on_level_pressed"]

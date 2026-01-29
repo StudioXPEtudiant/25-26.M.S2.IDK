@@ -14,7 +14,10 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nomgm"]
 resource_name = "Colour"
 shader = ExtResource("2_1vojt")
-shader_parameter/hue_shift = 0.95
+shader_parameter/hue_shift_deg = -15.0
+shader_parameter/saturation = 1.1
+shader_parameter/value = 0.95
+shader_parameter/alpha = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ocmng"]
 atlas = ExtResource("2_yenmw")

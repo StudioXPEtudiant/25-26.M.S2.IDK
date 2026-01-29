@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=3 uid="uid://dowwdhgdkfm2e"]
+
+[ext_resource type="Script" path="res://asset/Menus/Nenu_Menu.gd" id="1_avuoe"]
+[ext_resource type="Texture2D" uid="uid://dmuc2oosangll" path="res://asset/map1/benny/Benny_Idle_Right.png" id="2_oqq86"]
+[ext_resource type="Script" path="res://asset/Menus/quit.gd" id="3_v753r"]
+[ext_resource type="Script" path="res://gotocomingsoon.gd" id="4_jwb18"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbg6k"]
+atlas = ExtResource("2_oqq86")
+region = Rect2(0, 0, 34, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ghe1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbg6k")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_avuoe")
+
+[node name="level" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 11.0
+offset_right = 112.0
+offset_bottom = 48.0
+text = "Levels"
+
+[node name="settings" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 83.0
+offset_right = 112.0
+offset_bottom = 120.0
+text = "Settings"
+
+[node name="Albums" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 151.0
+offset_right = 112.0
+offset_bottom = 188.0
+text = "Albums"
+
+[node name="quit" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 219.0
+offset_right = 112.0
+offset_bottom = 256.0
+text = "Quit"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(302.5, 134.875)
+scale = Vector2(16.8529, 7.93383)
+sprite_frames = SubResource("SpriteFrames_8ghe1")
+animation = &"Idle"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -8.602
+autoplay = true
+playback_type = 1
+
+[node name="QuitBoom" type="Node" parent="."]
+script = ExtResource("3_v753r")
+
+[node name="unfinished" type="Node" parent="."]
+script = ExtResource("4_jwb18")
+
+[connection signal="pressed" from="level" to="." method="_on_level_pressed"]
+[connection signal="pressed" from="settings" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="Albums" to="unfinished" method="_on_level_pressed"]
+[connection signal="pressed" from="quit" to="QuitBoom" method="_on_level_pressed"]
