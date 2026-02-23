@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://VinylActivate.gd" id="1_4c2sf"]
 [ext_resource type="Texture2D" uid="uid://cnjt1lrkiggmf" path="res://vinyl.png" id="1_dpjkw"]
-[ext_resource type="AudioStream" uid="uid://bu3ioiyssknd" path="res://asset/Menus/ik this meme is dead but it funny when me made it.ogg" id="3_nfd4y"]
+[ext_resource type="AudioStream" uid="uid://d2jk7yl12erxv" path="res://asset/Menus/Select.ogg" id="3_k3nsi"]
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("Disc", "Music")]
+[node name="Vinyl" type="Node2D" node_paths=PackedStringArray("Disc", "Music")]
 script = ExtResource("1_4c2sf")
-Speed = 10.0
+BPM = 145.0
 Disc = NodePath("Disc")
 Music = NodePath("AudioStreamPlayer")
 
@@ -16,19 +16,18 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_dpjkw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_nfd4y")
-volume_db = -6.952
+stream = ExtResource("3_k3nsi")
 playback_type = 1
 
-[node name="level" type="Button" parent="."]
-offset_left = 63.0
-offset_top = 143.0
-offset_right = 172.0
-offset_bottom = 180.0
+[node name="One" type="Button" parent="."]
+offset_left = 51.0
+offset_top = 134.0
+offset_right = 160.0
+offset_bottom = 171.0
 text = "Activate"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(240, 133)
 scale = Vector2(35.0724, -3.37111)
 
-[connection signal="pressed" from="level" to="." method="_on_level_pressed"]
+[connection signal="pressed" from="One" to="." method="_on_one_pressed"]
