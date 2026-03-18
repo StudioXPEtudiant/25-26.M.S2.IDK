@@ -9,12 +9,10 @@ func _on_level_pressed() -> void:
 	MoveLevel = true
 	
 func _process(delta: float) -> void:
-	print(Camera.position)
 	if MoveLevel == true:
 		Camera.position = lerp(Camera.position, b, t)
 	if Camera.position.y - b.y <= 0.1:
 		MoveLevel = false
-		print(MoveLevel)
 	
 
 
